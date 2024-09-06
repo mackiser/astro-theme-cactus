@@ -139,8 +139,7 @@ Now lets check port 9090 and see what we find.
 
 ![Website Port 9090](port-9090.png "10.0.2.15:9090")
 
-:::tip
-✅ **10 points!**
+:::note[10 points!]
 :::
 
 And the page source gave us no useful information.
@@ -258,7 +257,8 @@ FLAG{Whoa this is unexpected} - 10 Points
 42 bytes received in 00:00 (203.04 KiB/s)
 ```
 
-✅ **10 points!**
+:::note[10 points!]
+:::
 
 ## Analyzing nikto Scan
 
@@ -294,7 +294,8 @@ Lets check see if that `/passwords/` directory can give us anything.
 
 ![/passwords/](passwords.png "10.0.2.15/passwords/")
 
-✅ **10 points!**
+:::note[10 points!]
+:::
 
 And a webpage titled `passwords.html`.
 
@@ -351,7 +352,8 @@ We found a flag! Now lets run `more FLAG.txt` to view the contents of this text 
 FLAG{Get off the high road Summer!} - 10 Points
 ```
 
-✅ **10 points!**
+:::note[10 points!]
+:::
 
 ## Checking Morty's Directory
 
@@ -430,7 +432,8 @@ Anyway. Here it is:
 FLAG: {131333} - 20 Points 
 ```
 
-✅ **20 points!**
+:::note[20 points!]
+:::
 
 ## Checking Rick's Directory
 
@@ -519,7 +522,8 @@ Follow these clues, in order
 One of the words in my old bands name.
 ```
 
-✅ **20 points!**
+:::note[20 points!]
+:::
 
 ## Gaining root access
 
@@ -599,9 +603,10 @@ FLAG: {Ionic Defibrillator} - 30 points
 [root@localhost ~]#
 ```
 
-✅ **30 points!**
+:::note[30 points!]
+:::
 
-## Tools Used:
+## Tools Used
 - [netdiscover](https://www.kali.org/tools/netdiscover/)
 - [nmap](https://www.kali.org/tools/nmap/)
 - [nmapAutomator](https://github.com/21y4d/nmapAutomator)

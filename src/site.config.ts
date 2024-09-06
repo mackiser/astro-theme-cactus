@@ -48,7 +48,7 @@ export const menuLinks: { path: string; title: string }[] = [
 // https://expressive-code.com/reference/configuration/
 export const expressiveCodeOptions: AstroExpressiveCodeOptions = {
 	styleOverrides: {
-		borderRadius: "4px",
+		borderRadius: "2px",
 		codeFontFamily:
 			'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;',
 		codeFontSize: "0.875rem",
@@ -71,6 +71,6 @@ export const expressiveCodeOptions: AstroExpressiveCodeOptions = {
 		return `[data-theme="${theme.name}"]`;
 	},
 	// One dark, one light theme => https://expressive-code.com/guides/themes/#available-themes
-	themes: ["material-theme-palenight", "everforest-light"],
-	useThemedScrollbars: false,
+	themes: ["monokaim", "everforest-light"],
+	useThemedScrollbars: true,
 };
