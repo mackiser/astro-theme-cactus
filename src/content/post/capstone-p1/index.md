@@ -1,7 +1,7 @@
 ---
 title: "University Capstone Project: Project Proposal"
 description: "Essay for my final semester at university where I had to propose an IT Project with hard deliverables"
-publishDate: 19 September 2024
+publishDate: 18 September 2024
 tags: ["project management", "school"]
 draft: false
 ---
