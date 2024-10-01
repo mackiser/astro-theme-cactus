@@ -72,6 +72,12 @@ importers:
       '@biomejs/biome':
         specifier: ^1.8.3
         version: 1.8.3
+      '@iconify-json/cib':
+        specifier: ^1.2.0
+        version: 1.2.0
+      '@iconify-json/fa6-brands':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@iconify-json/mdi':
         specifier: ^1.1.68
         version: 1.1.68
@@ -106,8 +112,8 @@ importers:
         specifier: 0.14.1
         version: 0.14.1
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.6
-        version: 0.6.6(prettier-plugin-astro@0.14.1)(prettier@3.3.3)
+        specifier: ^0.6.8
+        version: 0.6.8(prettier-plugin-astro@0.14.1)(prettier@3.3.3)
       reading-time:
         specifier: ^1.5.0
         version: 1.5.0
@@ -517,6 +523,12 @@ packages:
 
   '@expressive-code/plugin-text-markers@0.35.6':
     resolution: {integrity: sha512-/k9eWVZSCs+uEKHR++22Uu6eIbHWEciVHbIuD8frT8DlqTtHYaaiwHPncO6KFWnGDz5i/gL7oyl6XmOi/E6GVg==}
+
+  '@iconify-json/cib@1.2.0':
+    resolution: {integrity: sha512-gaZ8bY+5i2oEudAJBJmsKa5AqRb5Zu+S77/WL8VRlNNLaQ+0MlT6N8sdwCNFRwjxInDUXV9XH7jxd8e0bhSW1A==}
+
+  '@iconify-json/fa6-brands@1.2.0':
+    resolution: {integrity: sha512-2f5AeUbufKeU/JY+cbX6dOsPaQO1WwfShfoxwRd5VRF3Lr1jGM8CfXLFhb8bonAqbue1oBPwmjHUfaCafAfo2A==}
 
   '@iconify-json/mdi@1.1.68':
     resolution: {integrity: sha512-7//TKCiXLU6kNWeOJRTBbisofVO7rF1sD1TZTL4/V9nqlmVNczQ5IOY0GgKOTsitkcTnX9GXgrgbjw3OI5B69w==}
@@ -2530,8 +2542,8 @@ packages:
     resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
     engines: {node: ^14.15.0 || >=16.0.0}
 
-  prettier-plugin-tailwindcss@0.6.6:
-    resolution: {integrity: sha512-OPva5S7WAsPLEsOuOWXATi13QrCKACCiIonFgIR6V4lYv4QLp++UXVhZSzRbZxXGimkQtQT86CC6fQqTOybGng==}
+  prettier-plugin-tailwindcss@0.6.8:
+    resolution: {integrity: sha512-dGu3kdm7SXPkiW4nzeWKCl3uoImdd5CTZEJGxyypEPL37Wj0HT2pLqjrvSei1nTeuQfO4PUfjeW5cTUNRLZ4sA==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -3693,6 +3705,14 @@ snapshots:
   '@expressive-code/plugin-text-markers@0.35.6':
     dependencies:
       '@expressive-code/core': 0.35.6
+
+  '@iconify-json/cib@1.2.0':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/fa6-brands@1.2.0':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify-json/mdi@1.1.68':
     dependencies:
@@ -6158,7 +6178,7 @@ snapshots:
       prettier: 3.3.3
       sass-formatter: 0.7.9
 
-  prettier-plugin-tailwindcss@0.6.6(prettier-plugin-astro@0.14.1)(prettier@3.3.3):
+  prettier-plugin-tailwindcss@0.6.8(prettier-plugin-astro@0.14.1)(prettier@3.3.3):
     dependencies:
       prettier: 3.3.3
     optionalDependencies:
