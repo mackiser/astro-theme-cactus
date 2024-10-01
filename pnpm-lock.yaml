@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/mdx':
-        specifier: 3.1.4
-        version: 3.1.4(astro@4.14.3(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.5.4))
+        specifier: 3.1.7
+        version: 3.1.7(astro@4.14.3(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.5.4))
       '@astrojs/rss':
         specifier: 4.0.7
         version: 4.0.7
@@ -72,6 +72,12 @@ importers:
       '@biomejs/biome':
         specifier: ^1.8.3
         version: 1.8.3
+      '@iconify-json/cib':
+        specifier: ^1.2.0
+        version: 1.2.0
+      '@iconify-json/fa6-brands':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@iconify-json/mdi':
         specifier: ^1.1.68
         version: 1.1.68
@@ -167,8 +173,8 @@ packages:
   '@astrojs/markdown-remark@5.2.0':
     resolution: {integrity: sha512-vWGM24KZXz11jR3JO+oqYU3T2qpuOi4uGivJ9SQLCAI01+vEkHC60YJMRvHPc+hwd60F7euNs1PeOEixIIiNQw==}
 
-  '@astrojs/mdx@3.1.4':
-    resolution: {integrity: sha512-AcdcAlDpzTM5LHpur7A3NWoIqyfhH1gZNbTvvjiUlDEo7eJjIxl4gdWrb/kZZRfLBEuM8cptCB+Qk11ncQL4IA==}
+  '@astrojs/mdx@3.1.7':
+    resolution: {integrity: sha512-8lGdCt+S0TrZgQpbcP3fQJc4cTeacAirtz9TpAMtHCWrQGW8slKt3WG4/0N+bhZgYRC4h5AT5drzFz+y3wvmsg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       astro: ^4.8.0
@@ -517,6 +523,12 @@ packages:
 
   '@expressive-code/plugin-text-markers@0.35.6':
     resolution: {integrity: sha512-/k9eWVZSCs+uEKHR++22Uu6eIbHWEciVHbIuD8frT8DlqTtHYaaiwHPncO6KFWnGDz5i/gL7oyl6XmOi/E6GVg==}
+
+  '@iconify-json/cib@1.2.0':
+    resolution: {integrity: sha512-gaZ8bY+5i2oEudAJBJmsKa5AqRb5Zu+S77/WL8VRlNNLaQ+0MlT6N8sdwCNFRwjxInDUXV9XH7jxd8e0bhSW1A==}
+
+  '@iconify-json/fa6-brands@1.2.0':
+    resolution: {integrity: sha512-2f5AeUbufKeU/JY+cbX6dOsPaQO1WwfShfoxwRd5VRF3Lr1jGM8CfXLFhb8bonAqbue1oBPwmjHUfaCafAfo2A==}
 
   '@iconify-json/mdi@1.1.68':
     resolution: {integrity: sha512-7//TKCiXLU6kNWeOJRTBbisofVO7rF1sD1TZTL4/V9nqlmVNczQ5IOY0GgKOTsitkcTnX9GXgrgbjw3OI5B69w==}
@@ -1639,6 +1651,9 @@ packages:
 
   hast-util-to-html@9.0.1:
     resolution: {integrity: sha512-hZOofyZANbyWo+9RP75xIDV/gq+OUKx+T46IlwERnKmfpwp81XBFbT9mi26ws+SJchA4RVUQwIBJpqEOBhMzEQ==}
+
+  hast-util-to-html@9.0.3:
+    resolution: {integrity: sha512-M17uBDzMJ9RPCqLMO92gNNUDuBSq10a25SDBI08iCCxmorf4Yy6sYHK57n9WAbRAAaU+DuR4W6GN9K4DFZesYg==}
 
   hast-util-to-jsx-runtime@2.3.0:
     resolution: {integrity: sha512-H/y0+IWPdsLLS738P8tDnrQ8Z+dj12zQQ6WC11TIM21C8WFVoIxcqWXf2H3hiTVZjF1AWqoimGwrTWecWrnmRQ==}
@@ -3008,6 +3023,9 @@ packages:
   vfile@6.0.2:
     resolution: {integrity: sha512-zND7NlS8rJYb/sPqkb13ZvbbUoExdbi4w3SfRrMq6R3FvnLQmmfpajJNITuuYm6AZ5uao9vy4BAos3EXBPf2rg==}
 
+  vfile@6.0.3:
+    resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
+
   vite@5.4.2:
     resolution: {integrity: sha512-dDrQTRHp5C1fTFzcSaMxjk6vdpKvT+2/mIdE07Gw2ykehT49O0z/VHS3zZ8iV/Gh8BJJKHWOe5RjaNrW5xf/GA==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -3336,11 +3354,11 @@ snapshots:
       unist-util-remove-position: 5.0.0
       unist-util-visit: 5.0.0
       unist-util-visit-parents: 6.0.1
-      vfile: 6.0.2
+      vfile: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@3.1.4(astro@4.14.3(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.5.4))':
+  '@astrojs/mdx@3.1.7(astro@4.14.3(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.5.4))':
     dependencies:
       '@astrojs/markdown-remark': 5.2.0
       '@mdx-js/mdx': 3.0.1
@@ -3349,14 +3367,14 @@ snapshots:
       es-module-lexer: 1.5.4
       estree-util-visit: 2.0.0
       gray-matter: 4.0.3
-      hast-util-to-html: 9.0.1
+      hast-util-to-html: 9.0.3
       kleur: 4.1.5
       rehype-raw: 7.0.0
       remark-gfm: 4.0.0
       remark-smartypants: 3.0.2
       source-map: 0.7.4
       unist-util-visit: 5.0.0
-      vfile: 6.0.2
+      vfile: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -3694,6 +3712,14 @@ snapshots:
     dependencies:
       '@expressive-code/core': 0.35.6
 
+  '@iconify-json/cib@1.2.0':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/fa6-brands@1.2.0':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/mdi@1.1.68':
     dependencies:
       '@iconify/types': 2.0.0
@@ -3854,7 +3880,7 @@ snapshots:
       unist-util-position-from-estree: 2.0.0
       unist-util-stringify-position: 4.0.0
       unist-util-visit: 5.0.0
-      vfile: 6.0.2
+      vfile: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -4908,7 +4934,7 @@ snapshots:
       devlop: 1.1.0
       hast-util-from-parse5: 8.0.1
       parse5: 7.1.2
-      vfile: 6.0.2
+      vfile: 6.0.3
       vfile-message: 4.0.2
 
   hast-util-from-parse5@8.0.1:
@@ -4918,7 +4944,7 @@ snapshots:
       devlop: 1.1.0
       hastscript: 8.0.0
       property-information: 6.5.0
-      vfile: 6.0.2
+      vfile: 6.0.3
       vfile-location: 5.0.3
       web-namespaces: 2.0.1
 
@@ -4946,7 +4972,7 @@ snapshots:
       parse5: 7.1.2
       unist-util-position: 5.0.0
       unist-util-visit: 5.0.0
-      vfile: 6.0.2
+      vfile: 6.0.3
       web-namespaces: 2.0.1
       zwitch: 2.0.4
 
@@ -4997,6 +5023,20 @@ snapshots:
       ccount: 2.0.1
       comma-separated-tokens: 2.0.3
       hast-util-raw: 9.0.4
+      hast-util-whitespace: 3.0.0
+      html-void-elements: 3.0.0
+      mdast-util-to-hast: 13.2.0
+      property-information: 6.5.0
+      space-separated-tokens: 2.0.2
+      stringify-entities: 4.0.4
+      zwitch: 2.0.4
+
+  hast-util-to-html@9.0.3:
+    dependencies:
+      '@types/hast': 3.0.4
+      '@types/unist': 3.0.3
+      ccount: 2.0.1
+      comma-separated-tokens: 2.0.3
       hast-util-whitespace: 3.0.0
       html-void-elements: 3.0.0
       mdast-util-to-hast: 13.2.0
@@ -5416,7 +5456,7 @@ snapshots:
       trim-lines: 3.0.1
       unist-util-position: 5.0.0
       unist-util-visit: 5.0.0
-      vfile: 6.0.2
+      vfile: 6.0.3
 
   mdast-util-to-markdown@2.1.0:
     dependencies:
@@ -5880,7 +5920,7 @@ snapshots:
       nlcst-to-string: 4.0.0
       unist-util-modify-children: 4.0.0
       unist-util-visit-children: 3.0.0
-      vfile: 6.0.2
+      vfile: 6.0.3
 
   parse5-htmlparser2-tree-adapter@7.0.0:
     dependencies:
@@ -6220,12 +6260,12 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
       hast-util-raw: 9.0.4
-      vfile: 6.0.2
+      vfile: 6.0.3
 
   rehype-stringify@10.0.0:
     dependencies:
       '@types/hast': 3.0.4
-      hast-util-to-html: 9.0.1
+      hast-util-to-html: 9.0.3
       unified: 11.0.5
 
   rehype@13.0.1:
@@ -6277,7 +6317,7 @@ snapshots:
       '@types/mdast': 4.0.4
       mdast-util-to-hast: 13.2.0
       unified: 11.0.5
-      vfile: 6.0.2
+      vfile: 6.0.3
 
   remark-smartypants@3.0.2:
     dependencies:
@@ -6714,7 +6754,7 @@ snapshots:
   vfile-location@5.0.3:
     dependencies:
       '@types/unist': 3.0.3
-      vfile: 6.0.2
+      vfile: 6.0.3
 
   vfile-message@4.0.2:
     dependencies:
@@ -6725,6 +6765,11 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       unist-util-stringify-position: 4.0.0
+      vfile-message: 4.0.2
+
+  vfile@6.0.3:
+    dependencies:
+      '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
   vite@5.4.2(@types/node@22.4.2):
