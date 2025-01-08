@@ -1,5 +1,5 @@
 ---
-title: "Vulnhub Walkthrough: Rickdiculously Easy"
+title: "RickdiculouslyEasy:1"
 publishDate: "22 August 2024"
 description: "A simple walkthrough of a capture the flag machine on Vulnhub"
 tags: ["pentest", "kali", "vulnhub"]
