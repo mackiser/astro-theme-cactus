@@ -117,7 +117,7 @@ The webpage itself does not give us much information, but if we inspect the webp
 
 Now we will see what files/directories we can find using the [dirb](https://www.kali.org/tools/dirb/) tool.
 
-```sh
+```sh {21,22}
 $ dirb http://10.0.2.5
 
 -----------------
