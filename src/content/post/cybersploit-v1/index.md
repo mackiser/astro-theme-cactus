@@ -1,7 +1,7 @@
 ---
 title: "Cybersploit:1"
 publishDate: "07 January 2025"
-description: "THIS IS A MACHINE FOR COMPLETE BEGINNER , THERE ARE THREE FLAGS AVAILABLE IN THIS VM. FROM THIS VM YOU WILL LEARN ABOUT ENCODER-DECODER & EXPLOIT-DB."
+description: "A walkthrough of the Vulnhub machine Cybersploit:1"
 tags: ["pentest", "kali", "vulnhub"]
 ---
 
@@ -293,7 +293,7 @@ By navigating to the **/root** directory and running the `ls` command, we see th
 
 Running `cat finalflag.txt` allows us to view the contents of the file and reach the end of this CTF challenge.
 
-```sh
+```
 # cat finalflag.txt
   ______ ____    ____ .______    _______ .______          _______..______    __        ______    __  .___________.
  /      |\   \  /   / |   _  \  |   ____||   _  \        /       ||   _  \  |  |      /  __  \  |  | |           |
